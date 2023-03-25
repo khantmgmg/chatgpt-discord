@@ -26,6 +26,11 @@ from src.moderation import (
     send_moderation_flagged_message,
 )
 
+from keep_alive import keep_alive
+
+# Call the keep_alive function to start the web server
+keep_alive()
+
 logging.basicConfig(
     format="[%(asctime)s] [%(filename)s:%(lineno)d] %(message)s", level=logging.INFO
 )
